@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    height: 80px;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background: #725AC1;
+
+}
+.setting{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button{
+    position: relative;
+    display: block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+    inline-size: none;
+  }
+  button:hover{
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+  }
+  button:active{
+    transform: scale(0.9);
+  }
+  .input-color-container {
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+  }
+  
+  .input-color {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 116px;
+    height: 116px;
+    border: none;
+  }  
+.card {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px white,
+               -15px -15px 30px #ffffff;
+    margin-bottom: 40px;
+    margin-left: 100px;
+}
+.card .grid{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid rgb(17, 16, 16);
+}
